@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bid Details</title>
+	<link rel="stylesheet" type="text/css" href="leader.css">
+</head>
+<body>
+<h1>Amount Bidded</h1>
 
+<div id="leaderboard"></div>
+<h1 id="abc"></h1>
+<form action="../leaderboard/leader.html">
+    <input type="submit" class="button" value="LeaderBoard">
+</form>
+
+
+</body><!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBK54Vyd-m_BaYKGwiyjCN3-gbr-sPkucw",
+    authDomain: "technothrone-9a72a.firebaseapp.com",
+    databaseURL: "https://technothrone-9a72a.firebaseio.com",
+    projectId: "technothrone-9a72a",
+    storageBucket: "technothrone-9a72a.appspot.com",
+    messagingSenderId: "460787888015",
+    appId: "1:460787888015:web:6a9100eb1bfe57b5b5a5fa",
+    measurementId: "G-JB7D270086"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="leader.js"></script>
+</html>
