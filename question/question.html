@@ -1,1 +1,75 @@
+<head>
+	<title>Question</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBK54Vyd-m_BaYKGwiyjCN3-gbr-sPkucw",
+    authDomain: "technothrone-9a72a.firebaseapp.com",
+    databaseURL: "https://technothrone-9a72a.firebaseio.com",
+    projectId: "technothrone-9a72a",
+    storageBucket: "technothrone-9a72a.appspot.com",
+    messagingSenderId: "460787888015",
+    appId: "1:460787888015:web:6a9100eb1bfe57b5b5a5fa",
+    measurementId: "G-JB7D270086"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="question.js"></script>
+<body>
+
+	<div id="page-wrap">
+
+		
+		<form action="grade.php" method="post" id="quiz">
+		
+            <ol>
+            
+                <li>
+                
+                    <h3><span id="question"></span></h3>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">A) <span id="option-a"></span> </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">B) <span id="option-b"></span></label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">C) <span id="option-c"></span></label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                        <label for="question-1-answers-D">D) <span id="option-d"></span></label>
+                    </div>
+                
+                </li>
+                
+                
+            </ol>
+            
+            <input type="submit" value="Submit Quiz" />
+		
+		</form>
+	
+	</div>
+	
+</body>
+
+</html>
